@@ -13,18 +13,23 @@
         .nav-link:hover, .nav-link.active { color: #feFAE0 !important; }
         .btn-cv { background-color: #a9b388; color: #ffffff; font-weight: bold; border: none; border-radius: 25px; padding: 8px 20px; transition: 0.3s; }
         .btn-cv:hover { background-color: #5f6f52; transform: translateY(-2px); }
+        
         section { padding: 80px 0; border-bottom: 1px solid #e9edc9; }
         .hero-title span { color: #5f6f52; }
         .profile-img { width: 220px; height: 220px; object-fit: cover; border-radius: 50%; border: 6px solid #a9b388; box-shadow: 0 10px 25px rgba(58, 77, 57, 0.1); }
+        
+        /* Proyectos y Caso de Estudio */
         .project-card { background: #ffffff; border: 1px solid #e9edc9; border-radius: 15px; overflow: hidden; transition: 0.3s; height: 100%; border-top: 5px solid #a9b388; }
-        .project-card:hover { transform: translateY(-10px); box-shadow: 0 12px 25px rgba(58, 77, 57, 0.1); }
-        .project-body { padding: 25px; }
+        .case-study-box { background: #f0f2e8; border: 2px solid #a9b388; border-radius: 20px; padding: 40px; margin-top: 20px; }
+        
+        /* Línea de tiempo de Experiencia */
         .exp-item { position: relative; padding-left: 40px; margin-bottom: 30px; border-left: 2px solid #a9b388; margin-left: 20px; }
         .exp-dot { position: absolute; left: -9px; top: 6px; width: 16px; height: 16px; background: #5f6f52; border-radius: 50%; }
-        .edu-card { background: #ffffff; border: 1px solid #e9edc9; padding: 20px; border-radius: 15px; height: 100%; border-bottom: 4px solid #a9b388; transition: 0.3s; }
-        .edu-card:hover { border-color: #5f6f52; }
+        .exp-company { color: #3a4d39; font-weight: bold; font-size: 1.1rem; }
+        .exp-date { color: #5f6f52; font-size: 0.8rem; font-weight: 600; background: #fcfdf9; border: 1px solid #a9b388; padding: 2px 10px; border-radius: 10px; display: inline-block; margin-bottom: 5px; }
+
+        .edu-card { background: #ffffff; border: 1px solid #e9edc9; padding: 20px; border-radius: 15px; height: 100%; border-bottom: 4px solid #a9b388; }
         .contact-box { background: #ffffff; padding: 25px; border-radius: 15px; border: 1px solid #e9edc9; transition: 0.3s; height: 100%; }
-        .contact-icon { font-size: 2rem; color: #5f6f52; margin-bottom: 10px; display: block; }
         .badge-skill { background-color: #f0f2e8; color: #3a4d39; border: 1px solid #a9b388; padding: 6px 15px; border-radius: 20px; font-size: 0.85rem; display: inline-block; margin: 4px; }
     </style>
 </head>
@@ -37,9 +42,9 @@
                 <ul class="navbar-nav ms-auto me-3">
                     <li class="nav-item"><a class="nav-link" href="#perfil">Sobre mí</a></li>
                     <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#estudio">Caso de Estudio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia Laboral</a></li>
                     <li class="nav-item"><a class="nav-link" href="#educacion">Educación</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                 </ul>
                 <a href="Curriculum%20Lorena%20Jiménez%20M.%202026.pdf" class="btn btn-cv btn-sm px-4" download>Descargar CV</a>
             </div>
@@ -53,125 +58,111 @@
             </div>
             <div class="col-lg-8">
                 <h1 class="hero-title">Ingeniera Comercial & <span>Analista de Sistemas</span></h1>
-                <p class="lead fw-bold" style="color: #5f6f52;">Estratega de Negocios | Desarrolladora Python Full Stack</p>
+                <p class="lead fw-bold" style="color: #5f6f52;">Desarrolladora Full Stack Python Trainee</p>
                 <p style="line-height: 1.8; font-size: 1.1rem;">
-                    Especialista en optimización de procesos corporativos y gestión de carteras de alta complejidad. Integrando capacidades analíticas con el desarrollo de software para crear soluciones tecnológicas robustas y escalables.
+                    Profesional con sólida trayectoria en optimización de procesos y gestión de carteras corporativas. Actualmente integrando capacidades de arquitectura técnica con desarrollo de software para crear soluciones robustas y escalables en Python.
                 </p>
                 <div class="mt-3">
-                    <span class="badge-skill">Python & Django</span>
-                    <span class="badge-skill">SQL Avanzado</span>
-                    <span class="badge-skill">Auditoría SOX</span>
-                    <span class="badge-skill">Gestión de Proyectos</span>
+                    <span class="badge-skill">Python & Django</span> <span class="badge-skill">Bases de Datos SQL</span> <span class="badge-skill">Auditoría SOX</span>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="proyectos" class="container bg-light rounded-4 my-5">
-        <h2 class="text-center mb-5 hero-title">Desarrollo <span>Tecnológico</span></h2>
+        <h2 class="text-center mb-5 hero-title">Desarrollo <span>Técnico</span></h2>
         <div class="row g-4">
             <div class="col-md-4">
-                <div class="project-card shadow-sm">
-                    <div class="project-body">
-                        <h5 class="fw-bold">Alke Wallet - Backend</h5>
-                        <p class="small text-muted">Integración de base de datos relacional con Django ORM. Implementación de modelos para usuarios y transacciones financieras con migraciones seguras.</p>
-                        <div class="mt-3">
-                            <span class="badge-skill">Django</span> <span class="badge-skill">SQLite</span> <span class="badge-skill">ORM</span>
-                        </div>
-                    </div>
-                </div>
+                <div class="project-card shadow-sm"><div class="project-body p-4"><h5 class="fw-bold">Alke Wallet - Backend</h5><p class="small text-muted">Integración de base de datos relacional con Django ORM para transacciones financieras.</p><span class="badge-skill">Django</span></div></div>
             </div>
             <div class="col-md-4">
-                <div class="project-card shadow-sm">
-                    <div class="project-body">
-                        <h5 class="fw-bold">E-Wallet Interface</h5>
-                        <p class="small text-muted">Desarrollo de arquitectura lógica de billetera virtual. Manejo de vistas, plantillas dinámicas y lógica de negocio para operaciones digitales.</p>
-                        <div class="mt-3">
-                            <span class="badge-skill">Python</span> <span class="badge-skill">MTV</span> <span class="badge-skill">Bootstrap</span>
-                        </div>
-                    </div>
-                </div>
+                <div class="project-card shadow-sm"><div class="project-body p-4"><h5 class="fw-bold">E-Wallet Interface</h5><p class="small text-muted">Diseño de arquitectura lógica y flujo de vistas para billeteras digitales.</p><span class="badge-skill">Python</span></div></div>
             </div>
             <div class="col-md-4">
-                <div class="project-card shadow-sm">
-                    <div class="project-body">
-                        <h5 class="fw-bold">Gestión de Datos Digitales</h5>
-                        <p class="small text-muted">Aplicación para la automatización de procesos y manejo de estructuras de datos complejas, optimizando flujos de información de usuarios.</p>
-                        <div class="mt-3">
-                            <span class="badge-skill">Python Core</span> <span class="badge-skill">CRUD</span> <span class="badge-skill">Lógica</span>
-                        </div>
-                    </div>
+                <div class="project-card shadow-sm"><div class="project-body p-4"><h5 class="fw-bold">Gestión Digital Core</h5><p class="small text-muted">Automatización de procesos mediante lógica CRUD avanzada para usuarios.</p><span class="badge-skill">Python Core</span></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="estudio" class="container">
+        <h2 class="text-center mb-5 hero-title">Caso de Estudio: <span>Ingeniería de Software</span></h2>
+        <div class="case-study-box shadow-sm">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6 class="fw-bold text-uppercase text-muted" style="font-size: 0.8rem;">Descripción</h6>
+                    <p>Creación de una plataforma de billetera digital (Alke Wallet) integrando backend y bases de datos relacionales.</p>
+                    <h6 class="fw-bold text-uppercase text-muted" style="font-size: 0.8rem;">Desafío Principal</h6>
+                    <p>Garantizar la integridad de saldos durante transacciones críticas en tiempo real.</p>
+                    <h6 class="fw-bold text-uppercase text-muted" style="font-size: 0.8rem;">Solución Propuesta</h6>
+                    <p>Modelamiento de datos DER con Django ORM para separar lógica de usuarios y transacciones con trazabilidad total.</p>
+                </div>
+                <div class="col-md-6 border-start border-secondary">
+                    <h6 class="fw-bold text-uppercase text-muted" style="font-size: 0.8rem;">Métricas de Impacto</h6>
+                    <p>Optimización del 40% en tiempos de respuesta de consultas financieras mediante filtros eficientes.</p>
+                    <h6 class="fw-bold text-uppercase text-muted" style="font-size: 0.8rem;">Aprendizajes</h6>
+                    <p>Dominio del flujo MTV, migraciones seguras y aplicación de lógica comercial a código funcional.</p>
+                    <h6 class="fw-bold text-uppercase text-muted" style="font-size: 0.8rem;">Justificación</h6>
+                    <p>Representa mi capacidad de unir el mundo comercial con la arquitectura de sistemas en una solución real.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="experiencia" class="container">
-        <h2 class="text-center mb-5 hero-title">Experiencia <span>Laboral</span></h2>
+    <section id="experiencia" class="container bg-white rounded-4 my-5">
+        <h2 class="text-center mb-5 hero-title">Trayectoria <span>Laboral</span></h2>
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <div class="exp-item">
                     <div class="exp-dot"></div>
                     <div class="exp-company">UpCom DTS</div>
-                    <div class="fw-bold">Gestión de Casos Críticos</div>
-                    <p class="small text-muted">2026 | Normativa técnica Mineduc.</p>
+                    <div class="exp-date">2026</div>
+                    <p class="mb-0 fw-bold">Ejecutiva Especialista en Casos Críticos</p>
+                    <p class="small text-muted">Gestión normativa técnica bajo estándares del Mineduc.</p>
                 </div>
                 <div class="exp-item">
                     <div class="exp-dot"></div>
                     <div class="exp-company">Entel S.A.</div>
-                    <div class="fw-bold">Cartera Clientes Corporativos</div>
-                    <p class="small text-muted">2016 - 2025 | Facturación > $2.300 MM.</p>
+                    <div class="exp-date">2016 - 2025</div>
+                    <p class="mb-0 fw-bold">Ejecutiva de Atención a Clientes Corporativos</p>
+                    <p class="small text-muted">Gestión de cartera premium con facturación superior a $2.300 MM anuales.</p>
+                </div>
+                <div class="exp-item">
+                    <div class="exp-dot"></div>
+                    <div class="exp-company">Securitas Chile</div>
+                    <div class="exp-date">2015 - 2016</div>
+                    <p class="mb-0 fw-bold">Analista de Certificación Laboral</p>
+                    <p class="small text-muted">Estandarización de procesos bajo Ley 20.123.</p>
                 </div>
                 <div class="exp-item">
                     <div class="exp-dot"></div>
                     <div class="exp-company">ADT</div>
-                    <div class="fw-bold">Analista de Sistemas / Coordinadora</div>
-                    <p class="small text-muted">2000 - 2015 | Reajuste masivo y Auditoría SOX.</p>
+                    <div class="exp-date">2000 - 2015</div>
+                    <p class="mb-0 fw-bold">Analista de Sistemas / Coordinadora</p>
+                    <p class="small text-muted">Diseño de sistemas para reajustes masivos y auditorías SOX.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="educacion" class="container bg-white rounded-4 my-5">
+    <section id="educacion" class="container">
         <h2 class="text-center mb-5 hero-title">Formación <span>Académica</span></h2>
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-3">
-                <div class="edu-card shadow-sm text-center">
-                    <h6 class="edu-title">Ingeniería Comercial</h6>
-                    <p class="small mb-0">U. de Las Américas</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="edu-card shadow-sm text-center">
-                    <h6 class="edu-title">Analista de Sistemas</h6>
-                    <p class="small mb-0">Universidad UCINF</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="edu-card shadow-sm text-center">
-                    <h6 class="edu-title">Full Stack Python</h6>
-                    <p class="small mb-0">SENCE (En curso)</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="edu-card shadow-sm text-center">
-                    <h6 class="edu-title">Secretariado Ejecutivo</h6>
-                    <p class="small mb-0">Inst. Eduardo Frei M.</p>
-                </div>
-            </div>
+        <div class="row g-4 text-center">
+            <div class="col-md-3"><div class="edu-card"><h6>Ingeniería Comercial</h6><small>U. Las Américas</small></div></div>
+            <div class="col-md-3"><div class="edu-card"><h6>Analista de Sistemas</h6><small>U. UCINF</small></div></div>
+            <div class="col-md-3"><div class="edu-card" style="border-top: 4px solid #5f6f52;"><h6>Python Full Stack</h6><small>SENCE (2026)</small></div></div>
+            <div class="col-md-3"><div class="edu-card"><h6>Secretariado Ejecutivo</h6><small>Inst. Eduardo Frei</small></div></div>
         </div>
     </section>
 
     <section id="contacto" class="container text-center">
-        <h2 class="mb-5 hero-title">Contacto <span>Directo</span></h2>
         <div class="row g-4 justify-content-center">
-            <div class="col-md-4"><div class="contact-box shadow-sm"><i class="bi bi-whatsapp contact-icon"></i><h6>WhatsApp</h6><p class="small">+56952160931</p><a href="https://wa.me/56952160931" target="_blank" class="btn btn-sm btn-outline-dark">Mensaje</a></div></div>
-            <div class="col-md-4"><div class="contact-box shadow-sm"><i class="bi bi-envelope-at contact-icon"></i><h6>Email</h6><p class="small">lorenajimenezme@hotmail.com</p><a href="mailto:lorenajimenezme@hotmail.com" class="btn btn-sm btn-outline-dark">Enviar</a></div></div>
-            <div class="col-md-4"><div class="contact-box shadow-sm"><i class="bi bi-linkedin contact-icon"></i><h6>LinkedIn</h6><p class="small">/lorenajimenezmeneses</p><a href="https://www.linkedin.com/in/lorenajimenezmeneses" target="_blank" class="btn btn-sm btn-outline-dark">Perfil</a></div></div>
+            <div class="col-md-4"><div class="contact-box shadow-sm"><i class="bi bi-whatsapp fs-2 text-success"></i><p class="mt-2 mb-0">+56952160931</p></div></div>
+            <div class="col-md-4"><div class="contact-box shadow-sm"><i class="bi bi-envelope-at fs-2 text-success"></i><p class="mt-2 mb-0">lorenajimenezme@hotmail.com</p></div></div>
+            <div class="col-md-4"><div class="contact-box shadow-sm"><i class="bi bi-linkedin fs-2 text-success"></i><p class="mt-2 mb-0">/lorenajimenezmeneses</p></div></div>
         </div>
     </section>
 
-    <footer class="py-5 text-center text-muted"><p>© 2026 Lorena Jiménez Meneses | Santiago, Chile</p></footer>
+    <footer class="py-4 text-center text-muted"><p>© 2026 Lorena Jiménez Meneses | Santiago, Chile</p></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
