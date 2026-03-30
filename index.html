@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lorena Jiménez Meneses- Portafolio Profesional</title>
+    <title>Lorena Jiménez Meneses - Portafolio Profesional</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <style>
@@ -12,27 +12,31 @@
         .nav-link { color: #f8f9f4 !important; font-weight: 500; }
         .nav-link:hover, .nav-link.active { color: #feFAE0 !important; }
         .btn-cv { background-color: #a9b388; color: #ffffff; font-weight: bold; border: none; border-radius: 25px; padding: 8px 20px; transition: 0.3s; }
-        .btn-cv:hover { background-color: #5f6f52; transform: translateY(-2px); }
         
         section { padding: 80px 0; border-bottom: 1px solid #e9edc9; }
         .hero-title span { color: #5f6f52; }
         .profile-img { width: 220px; height: 220px; object-fit: cover; border-radius: 50%; border: 6px solid #a9b388; box-shadow: 0 10px 25px rgba(58, 77, 57, 0.1); }
         
-        .project-card { background: #ffffff; border: 1px solid #e9edc9; border-radius: 15px; transition: 0.3s; height: 100%; border-top: 5px solid #a9b388; }
+        /* Proyectos */
+        .project-card { background: #ffffff; border: 1px solid #e9edc9; border-radius: 15px; transition: 0.3s; height: 100%; border-top: 5px solid #a9b388; padding: 20px; }
         .project-card:hover { transform: translateY(-10px); box-shadow: 0 12px 25px rgba(58, 77, 57, 0.1); }
         
-        /* Efecto Sombreado para Educación */
+        /* Caso de Estudio Estilo Tarea */
+        .case-study-box { background: #f0f2e8; border: 2px solid #a9b388; border-radius: 20px; padding: 30px; margin-top: 20px; }
+        .case-title { color: #3a4d39; font-weight: bold; text-transform: uppercase; font-size: 0.8rem; margin-bottom: 5px; display: block; }
+
+        /* Experiencia */
+        .exp-item { position: relative; padding-left: 40px; margin-bottom: 30px; border-left: 2px solid #a9b388; margin-left: 20px; }
+        .exp-dot { position: absolute; left: -9px; top: 6px; width: 16px; height: 16px; background: #5f6f52; border-radius: 50%; }
+
+        /* Educación con Sombreado (Hover) */
         .edu-card { background: #ffffff; border: 1px solid #e9edc9; padding: 20px; border-radius: 15px; height: 100%; border-bottom: 4px solid #a9b388; transition: 0.4s ease; }
         .edu-card:hover { transform: translateY(-8px); box-shadow: 0 10px 20px rgba(58, 77, 57, 0.15); border-color: #5f6f52; }
 
-        /* Estilos de Contacto */
+        /* Contacto Interactivo */
         .contact-box { background: #ffffff; padding: 25px; border-radius: 15px; border: 1px solid #e9edc9; transition: 0.3s; height: 100%; text-decoration: none; display: block; color: inherit; }
         .contact-box:hover { border-color: #a9b388; background: #f0f2e8; transform: scale(1.02); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-        .contact-icon { font-size: 2.5rem; transition: 0.3s; }
-        .contact-box:hover .contact-icon { transform: scale(1.1); }
-
-        .exp-item { position: relative; padding-left: 40px; margin-bottom: 30px; border-left: 2px solid #a9b388; margin-left: 20px; }
-        .exp-dot { position: absolute; left: -9px; top: 6px; width: 16px; height: 16px; background: #5f6f52; border-radius: 50%; }
+        
         .badge-skill { background-color: #f0f2e8; color: #3a4d39; border: 1px solid #a9b388; padding: 6px 15px; border-radius: 20px; font-size: 0.85rem; display: inline-block; margin: 4px; }
     </style>
 </head>
@@ -45,6 +49,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#perfil">Sobre mí</a></li>
                     <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#estudio">Caso de Estudio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia Laboral</a></li>
                     <li class="nav-item"><a class="nav-link" href="#educacion">Educación</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
@@ -56,16 +61,16 @@
     <section id="perfil" class="container" style="margin-top: 50px;">
         <div class="row align-items-center">
             <div class="col-lg-4 text-center mb-4">
-                <img src="830e4883-bbf6-43e1-ba96-d325c59c5707.jpg" alt="Lorena Jiménez Meneses" class="profile-img">
+                <img src="830e4883-bbf6-43e1-ba96-d325c59c5707.jpg" alt="Lorena Jiménez" class="profile-img">
             </div>
             <div class="col-lg-8">
                 <h1 class="hero-title">Ingeniera Comercial & <span>Analista de Sistemas</span></h1>
                 <p class="lead fw-bold" style="color: #5f6f52;">Desarrolladora Full Stack Python Trainee</p>
                 <p style="line-height: 1.8; font-size: 1.1rem;">
-                    Especialista en optimización de procesos y gestión de carteras corporativas. Actualmente integrando capacidades de arquitectura técnica con desarrollo de software para crear soluciones robustas y escalables en Python y Django.
+                    Especialista en optimización de procesos corporativos. Actualmente integrando capacidades de arquitectura técnica con desarrollo de software para crear soluciones robustas en Python y Django.
                 </p>
                 <div class="mt-3">
-                    <span class="badge-skill">Python & Django</span> <span class="badge-skill">Bases de Datos SQL</span> <span class="badge-skill">Auditoría SOX</span>
+                    <span class="badge-skill">Python & Django</span> <span class="badge-skill">Bases de Datos SQL</span> <span class="badge-skill">Gestión Comercial</span>
                 </div>
             </div>
         </div>
@@ -74,22 +79,31 @@
     <section id="proyectos" class="container bg-light rounded-4 my-5">
         <h2 class="text-center mb-5 hero-title">Desarrollo <span>Técnico</span></h2>
         <div class="row g-4">
-            <div class="col-md-4">
-                <div class="project-card shadow-sm p-4 text-center">
-                    <h5 class="fw-bold">Alke Wallet - Backend</h5>
-                    <p class="small text-muted">Integración de base de datos relacional con Django ORM para transacciones seguras.</p>
+            <div class="col-md-4"><div class="project-card shadow-sm text-center"><h5 class="fw-bold">Alke Wallet - Backend</h5><p class="small text-muted">Integración de base de datos relacional con Django ORM para transacciones seguras.</p></div></div>
+            <div class="col-md-4"><div class="project-card shadow-sm text-center"><h5 class="fw-bold">E-Wallet Interface</h5><p class="small text-muted">Diseño de arquitectura lógica y flujo de vistas dinámicas para billeteras virtuales.</p></div></div>
+            <div class="col-md-4"><div class="project-card shadow-sm text-center"><h5 class="fw-bold">Gestión Digital Core</h5><p class="small text-muted">Automatización de procesos mediante lógica CRUD avanzada para manejo de usuarios.</p></div></div>
+        </div>
+    </section>
+
+    <section id="estudio" class="container">
+        <h2 class="text-center mb-5 hero-title">Caso de Estudio: <span>Análisis Técnico</span></h2>
+        <div class="case-study-box shadow-sm">
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="case-title">Descripción</span>
+                    <p class="small">Desarrollo de plataforma de billetera digital (Alke Wallet) integrando backend y bases de datos relacionales.</p>
+                    <span class="case-title">Desafío Principal</span>
+                    <p class="small">Garantizar la integridad de saldos durante transacciones críticas en tiempo real.</p>
+                    <span class="case-title">Solución</span>
+                    <p class="small">Uso de Django ORM con modelos relacionados para separar lógica de usuarios y transacciones.</p>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="project-card shadow-sm p-4 text-center">
-                    <h5 class="fw-bold">E-Wallet Interface</h5>
-                    <p class="small text-muted">Diseño de arquitectura lógica y flujo de vistas dinámicas para billeteras virtuales.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="project-card shadow-sm p-4 text-center">
-                    <h5 class="fw-bold">Gestión Digital Core</h5>
-                    <p class="small text-muted">Automatización de procesos mediante lógica CRUD avanzada para manejo de usuarios.</p>
+                <div class="col-md-6 border-start border-secondary">
+                    <span class="case-title">Métricas de Impacto</span>
+                    <p class="small">Optimización del 40% en tiempos de respuesta de consultas mediante filtros eficientes.</p>
+                    <span class="case-title">Aprendizajes</span>
+                    <p class="small">Dominio de flujo MTV, migraciones seguras y modelamiento de datos DER.</p>
+                    <span class="case-title">Justificación</span>
+                    <p class="small">Proyecto que unifica mi experiencia comercial con la arquitectura de sistemas funcional.</p>
                 </div>
             </div>
         </div>
@@ -99,27 +113,9 @@
         <h2 class="text-center mb-5 hero-title">Trayectoria <span>Laboral</span></h2>
         <div class="row justify-content-center">
             <div class="col-lg-10">
-                <div class="exp-item">
-                    <div class="exp-dot"></div>
-                    <div class="exp-company">UpCom DTS</div>
-                    <div class="exp-date">2026</div>
-                    <p class="mb-0 fw-bold">Gestión de Casos Críticos</p>
-                    <p class="small text-muted">Resolución técnica bajo estándares del Mineduc.</p>
-                </div>
-                <div class="exp-item">
-                    <div class="exp-dot"></div>
-                    <div class="exp-company">Entel S.A.</div>
-                    <div class="exp-date">2016 - 2025</div>
-                    <p class="mb-0 fw-bold">Ejecutiva Clientes Corporativos</p>
-                    <p class="small text-muted">Gestión de carteras premium (Facturación > $2.300 MM anuales).</p>
-                </div>
-                <div class="exp-item">
-                    <div class="exp-dot"></div>
-                    <div class="exp-company">ADT</div>
-                    <div class="exp-date">2000 - 2015</div>
-                    <p class="mb-0 fw-bold">Analista de Sistemas / Coordinadora</p>
-                    <p class="small text-muted">Diseño de sistemas para reajustes masivos y auditorías SOX.</p>
-                </div>
+                <div class="exp-item"><div class="exp-dot"></div><div class="exp-company">UpCom DTS (2026)</div><p class="small text-muted mb-0">Gestión de Casos Críticos bajo estándares Mineduc.</p></div>
+                <div class="exp-item"><div class="exp-dot"></div><div class="exp-company">Entel S.A. (2016-2025)</div><p class="small text-muted mb-0">Ejecutiva Clientes Corporativos (Cartera premium).</p></div>
+                <div class="exp-item"><div class="exp-dot"></div><div class="exp-company">ADT (2000-2015)</div><p class="small text-muted mb-0">Analista de Sistemas / Auditoría SOX.</p></div>
             </div>
         </div>
     </section>
@@ -137,27 +133,9 @@
     <section id="contacto" class="container text-center">
         <h2 class="mb-5 hero-title">Contacto <span>Directo</span></h2>
         <div class="row g-4 justify-content-center">
-            <div class="col-md-4">
-                <a href="https://wa.me/56952160931" target="_blank" class="contact-box shadow-sm">
-                    <i class="bi bi-whatsapp contact-icon text-success"></i>
-                    <h6 class="mt-3">WhatsApp</h6>
-                    <p class="small text-muted">+56 9 5216 0931</p>
-                </a>
-            </div>
-            <div class="col-md-4">
-                <a href="mailto:lorenajimenezme@hotmail.com" class="contact-box shadow-sm">
-                    <i class="bi bi-envelope-at contact-icon text-success"></i>
-                    <h6 class="mt-3">Correo Electrónico</h6>
-                    <p class="small text-muted">lorenajimenezme@hotmail.com</p>
-                </a>
-            </div>
-            <div class="col-md-4">
-                <a href="https://www.linkedin.com/in/lorenajimenezmeneses" target="_blank" class="contact-box shadow-sm">
-                    <i class="bi bi-linkedin contact-icon text-success"></i>
-                    <h6 class="mt-3">LinkedIn</h6>
-                    <p class="small text-muted">Ver Perfil Profesional</p>
-                </a>
-            </div>
+            <div class="col-md-4"><a href="https://wa.me/56952160931" target="_blank" class="contact-box shadow-sm"><i class="bi bi-whatsapp fs-2 text-success"></i><h6>WhatsApp</h6><p class="small text-muted">+56 9 5216 0931</p></a></div>
+            <div class="col-md-4"><a href="mailto:lorenajimenezme@hotmail.com" class="contact-box shadow-sm"><i class="bi bi-envelope-at fs-2 text-success"></i><h6>Email</h6><p class="small text-muted">lorenajimenezme@hotmail.com</p></a></div>
+            <div class="col-md-4"><a href="https://www.linkedin.com/in/lorenajimenezmeneses" target="_blank" class="contact-box shadow-sm"><i class="bi bi-linkedin fs-2 text-success"></i><h6>LinkedIn</h6><p class="small text-muted">Ver Perfil</p></a></div>
         </div>
     </section>
 
