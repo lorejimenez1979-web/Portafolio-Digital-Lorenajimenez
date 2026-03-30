@@ -11,8 +11,10 @@
         .section-title { border-bottom: 3px solid #2c3e50; padding-bottom: 10px; margin-bottom: 30px; margin-top: 40px; }
         .card-custom { border-top: 5px solid #2c3e50; transition: 0.3s; height: 100%; }
         .card-custom:hover { transform: translateY(-5px); background-color: #f8f9fa; }
-        .badge-tech { background-color: #34495e; margin-right: 5px; }
+        .badge-tech { background-color: #34495e; color: white; margin-right: 5px; padding: 8px 12px; border-radius: 20px; font-size: 0.9rem; }
         .carousel-item img { height: 400px; object-fit: cover; border-radius: 15px; }
+        .exp-item { border-left: 3px solid #dee2e6; padding-left: 20px; margin-bottom: 30px; }
+        .exp-company { font-weight: bold; color: #2c3e50; }
     </style>
 </head>
 <body>
@@ -20,30 +22,30 @@
     <header class="hero text-center">
         <div class="container">
             <h1>Lorena Jiménez Meneses</h1>
-            <p class="lead">Ingeniera Comercial | Analista de Sistemas | Desarrolladora Full Stack Python (En curso)</p>
+            <p class="lead">Ingeniera Comercial | Analista de Sistemas | Desarrolladora Full Stack Python</p>
             <div class="mt-3">
-                <a href="mailto:lorenajimenezme@hotmail.com" class="btn btn-outline-light btn-sm"><i class="bi bi-envelope"></i> Contactar</a>
-                <a href="https://www.linkedin.com/in/lorenajimenezmeneses" target="_blank" class="btn btn-outline-light btn-sm"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                <span class="me-3"><i class="bi bi-envelope"></i> lorenajimenezme@hotmail.com</span>
+                <span><i class="bi bi-linkedin"></i> linkedin.com/in/lorenajimenezmeneses</span>
             </div>
         </div>
     </header>
 
     <main class="container my-5">
-        <h2 class="section-title text-center">Proyectos Destacados</h2>
+        <h2 class="section-title text-center">Proyectos y Portafolio</h2>
         <div id="projectCarousel" class="carousel slide shadow-lg mb-5" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://via.placeholder.com/1200x400/2c3e50/ffffff?text=Alke+Wallet+-+Django+Backend" class="d-block w-100" alt="Alke Wallet">
+                    <img src="https://via.placeholder.com/1200x400/2c3e50/ffffff?text=Proyecto+Alke+Wallet+Django" class="d-block w-100" alt="Alke Wallet">
                     <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded">
                         <h5>Alke Wallet</h5>
-                        <p>Billetera digital desarrollada con Django, Python y SQLite.</p>
+                        <p>Desarrollo Backend integral utilizando Python y el framework Django.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="https://via.placeholder.com/1200x400/34495e/ffffff?text=Gestion+de+Datos+y+Sistemas" class="d-block w-100" alt="Sistemas">
+                    <img src="https://via.placeholder.com/1200x400/34495e/ffffff?text=Sistemas+de+Gestion+de+Datos" class="d-block w-100" alt="Sistemas">
                     <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded">
-                        <h5>Análisis de Sistemas</h5>
-                        <p>Diseño de programas para reajuste tarifario masivo y auditorías SOX.</p>
+                        <h5>Análisis y Optimización</h5>
+                        <p>Diseño de soluciones técnicas para procesos masivos y auditorías.</p>
                     </div>
                 </div>
             </div>
@@ -57,93 +59,25 @@
 
         <section class="mb-5">
             <h2 class="section-title">Perfil Profesional</h2>
-            <p class="lead text-secondary">
-                Profesional con sólida trayectoria en atención a clientes corporativos, análisis de sistemas y coordinación administrativa[cite: 4]. Experta en gestión de carteras de alta facturación y diseño de sistemas bajo normativas legales y auditorías SOX[cite: 5].
+            <p class="text-secondary" style="font-size: 1.1rem; line-height: 1.8;">
+                Profesional con sólida trayectoria en atención a clientes corporativos, análisis de sistemas y coordinación administrativa. Experta en la gestión integral de carteras de alta facturación y diseño de sistemas bajo normativas legales. Actualmente especializándome en Desarrollo Full Stack Python para integrar visión estratégica con soluciones tecnológicas eficientes.
             </p>
         </section>
 
         <section class="mb-5">
             <h2 class="section-title">Formación Académica</h2>
             <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card card-custom shadow-sm p-3">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-custom shadow-sm p-4">
                         <h5>Ingeniería Comercial</h5>
-                        <p class="text-muted">Titulada | Univ. de Las Américas [cite: 26]</p>
+                        <p class="text-muted">Titulada | Universidad de Las Américas</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card card-custom shadow-sm p-3">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-custom shadow-sm p-4">
                         <h5>Análisis de Sistemas</h5>
-                        <p class="text-muted">Titulada | Univ. UCINF [cite: 27]</p>
+                        <p class="text-muted">Titulada | Universidad UCINF</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card card-custom shadow-sm p-3" style="border-top-color: #3498db;">
-                        <h5>Full Stack Python</h5>
-                        <p class="text-muted">En curso | Sence [cite: 30]</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="mb-5">
-            <h2 class="section-title">Experiencia Laboral</h2>
-            <div class="accordion" id="accordionExp">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#exp1">
-                            UpCom DTS - Ejecutiva de Atención Especializada (2026) [cite: 8]
-                        </button>
-                    </h2>
-                    <div id="exp1" class="accordion-collapse collapse show" data-bs-parent="#accordionExp">
-                        <div class="accordion-body">
-                            Gestión de casos críticos normativa Mineduc mediante CRM[cite: 9, 10].
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#exp2">
-                            Entel S.A. - Ejecutiva Clientes Corporativos (2016-2025) [cite: 11]
-                        </button>
-                    </h2>
-                    <div id="exp2" class="accordion-collapse collapse" data-bs-parent="#accordionExp">
-                        <div class="accordion-body">
-                            Administración de cartera corporativa con facturación anual superior a $2.300 millones[cite: 12]. Logro de 124% cumplimiento NPS[cite: 13].
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#exp3">
-                            ADT - Coordinadora Data Entry / Analista de Sistemas [cite: 21]
-                        </button>
-                    </h2>
-                    <div id="exp3" class="accordion-collapse collapse" data-bs-parent="#accordionExp">
-                        <div class="accordion-body">
-                            Diseño de programas para reajuste tarifario masivo y manuales SOX[cite: 24]. Cumplimiento metas comerciales sobre 100%[cite: 23].
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="mb-5">
-            <h2 class="section-title">Habilidades Técnicas</h2>
-            <div class="d-flex flex-wrap">
-                <span class="badge badge-tech p-2 mb-2">SQL Avanzado [cite: 33]</span>
-                <span class="badge badge-tech p-2 mb-2">Django / Python [cite: 30]</span>
-                <span class="badge badge-tech p-2 mb-2">Auditorías SOX [cite: 33]</span>
-                <span class="badge badge-tech p-2 mb-2">CRM / ERP [cite: 33]</span>
-                <span class="badge badge-tech p-2 mb-2">Inglés Intermedio [cite: 34]</span>
-            </div>
-        </section>
-    </main>
-
-    <footer class="text-center py-4 bg-dark text-white">
-        <p>&copy; 2026 Lorena Jiménez Meneses | Santiago, Chile [cite: 2]</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+                <div class="col-md-12 col-lg-4">
+                    <div class="card card-custom shadow-sm p-4" style="border-top-color: #349
