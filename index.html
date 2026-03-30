@@ -7,37 +7,44 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <style>
-        body { background-color: #011627; color: #FFFFFF; font-family: 'Segoe UI', sans-serif; scroll-behavior: smooth; }
-        .navbar { background-color: rgba(1, 22, 39, 0.95); border-bottom: 1px solid #1e3a52; }
+        /* Paleta Femenina: Rosa Malva y Ciruela Profundo */
+        body { background-color: #1a0f1a; color: #FFFFFF; font-family: 'Segoe UI', sans-serif; scroll-behavior: smooth; }
+        .navbar { background-color: rgba(45, 20, 45, 0.95); border-bottom: 1px solid #4a254a; }
         .nav-link { color: #FFFFFF !important; font-weight: 500; }
-        .nav-link:hover, .nav-link.active { color: #00A8E8 !important; }
-        .btn-cv { background-color: #00A8E8; color: #011627; font-weight: bold; border: none; transition: 0.3s; }
-        .btn-cv:hover { background-color: #0087ba; color: white; }
+        .nav-link:hover, .nav-link.active { color: #ff85a2 !important; }
         
-        section { padding: 100px 0; border-bottom: 1px solid #1e3a52; }
-        .hero-title span { color: #00A8E8; }
+        .btn-cv { background-color: #ff85a2; color: #1a0f1a; font-weight: bold; border: none; transition: 0.3s; border-radius: 20px; }
+        .btn-cv:hover { background-color: #f06292; color: white; transform: scale(1.05); }
         
-        .profile-img { width: 220px; height: 220px; object-fit: cover; border-radius: 50%; border: 5px solid #00A8E8; box-shadow: 0 0 25px rgba(0, 168, 232, 0.4); }
+        section { padding: 100px 0; border-bottom: 1px solid #331a33; }
+        .hero-title span { color: #ff85a2; }
+        
+        .profile-img { width: 220px; height: 220px; object-fit: cover; border-radius: 50%; border: 5px solid #ff85a2; box-shadow: 0 0 25px rgba(255, 133, 162, 0.4); }
 
-        .exp-item { position: relative; padding-left: 45px; margin-bottom: 40px; border-left: 2px solid #1e3a52; margin-left: 20px; }
-        .exp-dot { position: absolute; left: -9px; top: 5px; width: 16px; height: 16px; background: #00A8E8; border-radius: 50%; }
-        .exp-company { color: #00A8E8; font-weight: bold; font-size: 1.25rem; }
-        .exp-date { color: #A0B3C1; font-size: 0.9rem; font-style: italic; margin-bottom: 10px; }
+        /* Línea de tiempo de Experiencia */
+        .exp-item { position: relative; padding-left: 45px; margin-bottom: 40px; border-left: 2px solid #4a254a; margin-left: 20px; }
+        .exp-dot { position: absolute; left: -9px; top: 5px; width: 16px; height: 16px; background: #ff85a2; border-radius: 50%; }
+        .exp-company { color: #ff85a2; font-weight: bold; font-size: 1.25rem; }
+        .exp-date { color: #d4a5d4; font-size: 0.9rem; font-style: italic; margin-bottom: 10px; }
 
-        .edu-card { background: #022c43; border: 1px solid #1e3a52; padding: 25px; border-radius: 12px; height: 100%; transition: 0.3s; }
-        .edu-card:hover { border-color: #00A8E8; transform: translateY(-5px); }
-        .edu-title { color: #00A8E8; font-weight: 600; margin-bottom: 10px; }
+        /* Tarjetas de Educación y Habilidades */
+        .edu-card { background: #2d142d; border: 1px solid #4a254a; padding: 25px; border-radius: 15px; height: 100%; transition: 0.3s; }
+        .edu-card:hover { border-color: #ff85a2; transform: translateY(-5px); }
+        .edu-title { color: #ff85a2; font-weight: 600; margin-bottom: 10px; }
 
-        .contact-box { background: #022c43; padding: 25px; border-radius: 12px; border: 1px solid #1e3a52; transition: 0.3s; }
-        .contact-box:hover { border-color: #00A8E8; }
-        .badge-skill { background-color: #1e3a52; color: #00A8E8; border: 1px solid #00A8E8; padding: 8px 15px; border-radius: 20px; font-size: 0.85rem; display: inline-block; margin: 5px; }
+        .contact-box { background: #2d142d; padding: 25px; border-radius: 15px; border: 1px solid #4a254a; transition: 0.3s; }
+        .contact-box:hover { border-color: #ff85a2; background: #3d1b3d; }
+        
+        .badge-skill { background-color: #3d1b3d; color: #ff85a2; border: 1px solid #ff85a2; padding: 8px 15px; border-radius: 20px; font-size: 0.85rem; display: inline-block; margin: 5px; }
+        
+        .text-accent { color: #ff85a2; }
     </style>
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand text-white" href="#"><i class="bi bi-person-workspace text-info me-2"></i>Lorena Jiménez M.</a>
+            <a class="navbar-brand text-white" href="#"><i class="bi bi-stars text-accent me-2"></i>Lorena Jiménez M.</a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto me-3">
                     <li class="nav-item"><a class="nav-link" href="#inicio">Perfil</a></li>
@@ -45,7 +52,7 @@
                     <li class="nav-item"><a class="nav-link" href="#educacion">Educación</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                 </ul>
-                <a href="Curriculum%20Lorena%20Jiménez%20M.%202026.pdf" class="btn btn-cv btn-sm px-3" download>Descargar CV</a>
+                <a href="Curriculum%20Lorena%20Jiménez%20M.%202026.pdf" class="btn btn-cv btn-sm px-4" download>Descargar CV</a>
             </div>
         </div>
     </nav>
@@ -53,20 +60,20 @@
     <section id="inicio" class="container">
         <div class="row align-items-center">
             <div class="col-lg-4 text-center mb-4 mb-lg-0">
-                <img src="830e4883-bbf6-43e1-ba96-d325c59c5707.jpg" alt="Lorena Jiménez Meneses" class="profile-img">
+                <img src="830e4883-bbf6-43e1-ba96-d325c59c5707.jpg" alt="Lorena Jiménez" class="profile-img">
             </div>
             <div class="col-lg-8 text-center text-lg-start">
                 <h1 class="hero-title">Lorena <span>Jiménez Meneses</span></h1>
-                <p class="lead fw-bold" style="color: #00A8E8;">Ingeniera Comercial | Analista de Sistemas</p>
+                <p class="lead fw-bold text-accent">Ingeniera Comercial | Analista de Sistemas</p>
                 <p class="text-secondary" style="font-size: 1.1rem; line-height: 1.8;">
-                    Profesional en Ingeniería Comercial y Analista de Sistemas con sólida trayectoria en atención a clientes corporativos, análisis de sistemas y coordinación administrativa. Experta en la gestión integral de carteras de alta facturación y diseño de sistemas bajo normativas legales y auditorías SOX. Actualmente cursando especialización en Desarrollo Full Stack Python.
+                    Profesional con sólida trayectoria en gestión corporativa y análisis de sistemas. Experta en la administración de carteras de alta facturación y diseño de procesos eficientes bajo normativas internacionales. Actualmente cursando especialización en Desarrollo Full Stack Python para liderar la transformación digital con una visión estratégica de negocios.
                 </p>
                 <div class="mt-4">
+                    <div class="badge-skill">Python & Django</div>
                     <div class="badge-skill">SQL Avanzado</div>
-                    <div class="badge-skill">Django & Python</div>
                     <div class="badge-skill">Auditorías SOX</div>
-                    <div class="badge-skill">CRM / ERP</div>
-                    <div class="badge-skill">Inglés Intermedio</div>
+                    <div class="badge-skill">Gestión Comercial</div>
+                    <div class="badge-skill">Liderazgo Asertivo</div>
                 </div>
             </div>
         </div>
@@ -79,37 +86,30 @@
                 <div class="exp-item">
                     <div class="exp-dot"></div>
                     <div class="exp-company">UpCom DTS</div>
-                    <div class="fw-bold">Ejecutiva de Atención a Clientes Especializado</div>
-                    <div class="exp-date">02/2026 - 03/2026</div>
-                    <p>Gestión de casos críticos bajo la normativa técnica del Mineduc mediante plataformas CRM y resolución de requerimientos complejos.</p>
+                    <div class="fw-bold">Atención a Clientes Especializado</div>
+                    <div class="exp-date">2026</div>
+                    <p>Resolución de casos críticos y gestión normativa técnica de alta complejidad.</p>
                 </div>
                 <div class="exp-item">
                     <div class="exp-dot"></div>
                     <div class="exp-company">Entel S.A.</div>
-                    <div class="fw-bold">Ejecutiva de Atención a Clientes Corporativos</div>
-                    <div class="exp-date">12/2016 - 03/2025</div>
-                    <p>Administración integral de cartera corporativa con facturación anual superior a $2.300 millones y logro de 124% de cumplimiento en encuestas NPS.</p>
+                    <div class="fw-bold">Ejecutiva Clientes Corporativos</div>
+                    <div class="exp-date">2016 - 2025</div>
+                    <p>Gestión de cartera corporativa premium con facturación anual superior a $2.300 millones y excelente desempeño en indicadores de satisfacción (NPS).</p>
                 </div>
                 <div class="exp-item">
                     <div class="exp-dot"></div>
                     <div class="exp-company">Securitas Chile</div>
                     <div class="fw-bold">Analista de Certificación Laboral</div>
-                    <div class="exp-date">10/2015 - 10/2016</div>
-                    <p>Preparación de documentación laboral según Ley 20.123 para la certificación de trabajadores en faena y estandarización de procesos.</p>
-                </div>
-                <div class="exp-item">
-                    <div class="exp-dot"></div>
-                    <div class="exp-company">Claro Chile</div>
-                    <div class="fw-bold">Ejecutiva de Atención de Clientes</div>
-                    <div class="exp-date">02/2015 - 09/2015</div>
-                    <p>Atención presencial para gestión de portabilidades, contrataciones, ventas y retención con cumplimiento del 105% en metas.</p>
+                    <div class="exp-date">2015 - 2016</div>
+                    <p>Estandarización de procesos de certificación laboral y cumplimiento de normativas vigentes.</p>
                 </div>
                 <div class="exp-item">
                     <div class="exp-dot"></div>
                     <div class="exp-company">ADT</div>
-                    <div class="fw-bold">Coordinadora Data Entry / Analista de Sistemas</div>
-                    <div class="exp-date">09/2000 - 07/2015</div>
-                    <p>Diseño e implementación de programas para reajuste tarifario masivo y elaboración de manuales para auditorías SOX.</p>
+                    <div class="fw-bold">Analista de Sistemas / Coordinadora</div>
+                    <div class="exp-date">2000 - 2015</div>
+                    <p>Liderazgo en diseño de sistemas para reajustes tarifarios masivos y preparación de auditorías SOX.</p>
                 </div>
             </div>
         </div>
@@ -118,22 +118,22 @@
     <section id="educacion" class="container">
         <h2 class="text-center mb-5 hero-title">Formación <span>Académica</span></h2>
         <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-4">
                 <div class="edu-card shadow-sm">
                     <h5 class="edu-title">Ingeniería Comercial</h5>
                     <p class="mb-1 fw-bold">Titulada</p>
-                    <p class="text-secondary small">Universidad de Las Américas (2011-2017)</p>
+                    <p class="text-secondary small">Universidad de Las Américas</p>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-4">
                 <div class="edu-card shadow-sm">
                     <h5 class="edu-title">Análisis de Sistemas</h5>
                     <p class="mb-1 fw-bold">Titulada</p>
-                    <p class="text-secondary small">Universidad UCINF (2005-2006)</p>
+                    <p class="text-secondary small">Universidad UCINF</p>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="edu-card shadow-sm" style="border-left: 4px solid #00A8E8;">
+            <div class="col-md-4">
+                <div class="edu-card shadow-sm" style="border-top: 3px solid #ff85a2;">
                     <h5 class="edu-title">Full Stack Python Trainee</h5>
                     <p class="mb-1 fw-bold">En curso</p>
                     <p class="text-secondary small">Sence (2026)</p>
@@ -147,32 +147,29 @@
         <div class="row g-4 justify-content-center">
             <div class="col-md-4">
                 <div class="contact-box">
-                    <i class="bi bi-whatsapp fs-2 text-info"></i>
+                    <i class="bi bi-whatsapp fs-2 text-accent"></i>
                     <h5 class="mt-3">WhatsApp</h5>
                     <p class="text-secondary">+56952160931</p>
-                    <a href="https://wa.me/56952160931" target="_blank" class="btn btn-outline-info btn-sm">Enviar mensaje</a>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="contact-box">
-                    <i class="bi bi-envelope fs-2 text-info"></i>
+                    <i class="bi bi-envelope-heart fs-2 text-accent"></i>
                     <h5 class="mt-3">Email</h5>
-                    <p class="text-secondary small">lorenajimenezme@hotmail.com</p>
-                    <a href="mailto:lorenajimenezme@hotmail.com" class="btn btn-outline-info btn-sm">Escribir ahora</a>
+                    <p class="text-secondary">lorenajimenezme@hotmail.com</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="contact-box">
-                    <i class="bi bi-linkedin fs-2 text-info"></i>
+                    <i class="bi bi-linkedin fs-2 text-accent"></i>
                     <h5 class="mt-3">LinkedIn</h5>
-                    <p class="text-secondary small">/in/lorenajimenezmeneses</p>
-                    <a href="https://www.linkedin.com/in/lorenajimenezmeneses" target="_blank" class="btn btn-outline-info btn-sm">Ver Perfil</a>
+                    <p class="text-secondary">in/lorenajimenezmeneses</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-5 text-center text-secondary border-top border-secondary">
+    <footer class="py-4 text-center text-secondary">
         <p>© 2026 Lorena Jiménez Meneses | Ingeniera Comercial & Analista de Sistemas</p>
     </footer>
 
