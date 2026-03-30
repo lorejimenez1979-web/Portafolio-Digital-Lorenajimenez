@@ -3,81 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Lorena Jiménez - Ingeniera Comercial & Analista</title>
+    <title>Lorena Jiménez - Portafolio Profesional</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <style>
-        .hero { background: #1a252f; color: white; padding: 60px 0; }
-        .section-title { border-bottom: 3px solid #2c3e50; padding-bottom: 10px; margin-bottom: 30px; margin-top: 40px; }
-        .card-custom { border-top: 5px solid #2c3e50; transition: 0.3s; height: 100%; }
-        .card-custom:hover { transform: translateY(-5px); background-color: #f8f9fa; }
-        .badge-tech { background-color: #34495e; color: white; margin-right: 5px; padding: 8px 12px; border-radius: 20px; font-size: 0.9rem; }
-        .carousel-item img { height: 400px; object-fit: cover; border-radius: 15px; }
-        .exp-item { border-left: 3px solid #dee2e6; padding-left: 20px; margin-bottom: 30px; }
-        .exp-company { font-weight: bold; color: #2c3e50; }
+        /* Estilos base Dark Mode similares a la referencia */
+        body {
+            background-color: #011627; /* Fondo azul oscuro profundo */
+            color: #FFFFFF; /* Texto blanco principal */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Barra de navegación */
+        .navbar {
+            background-color: rgba(1, 22, 39, 0.95) !important;
+            padding: 15px 0;
+        }
+        .navbar-brand, .nav-link {
+            color: #FFFFFF !important;
+            font-weight: 500;
+        }
+        .nav-link.active {
+            color: #00A8E8 !important; /* Azul cyan para el estado activo */
+        }
+        .navbar-brand i {
+            color: #00A8E8;
+            margin-right: 8px;
+        }
+        .btn-cv {
+            background-color: #00A8E8;
+            color: #011627;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            padding: 8px 20px;
+        }
+        .btn-cv:hover {
+            background-color: #0087ba;
+            color: #FFFFFF;
+        }
+
+        /* Sección Hero */
+        .hero {
+            padding: 100px 0;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        .hero h1 span {
+            color: #00A8E8; /* El "Laboral" en azul */
+        }
+        .hero-desc {
+            color: #A0B3C1; /* Texto secundario gris claro */
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Sección de Experiencia */
+        .exp-section {
+            padding-bottom: 80px;
+        }
+        .exp-timeline-item {
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: 50px;
+        }
+        /* Línea vertical */
+        .exp-timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 17px;
+            top: 10px;
+            bottom: -50px;
+            width: 2px;
+            background-color: #1E3A52; /* Color de la línea vertical */
+        }
+        /* Borrar la línea en el último elemento */
+        .exp-timeline-item:last-child::before {
+            display: none;
+        }
+        
+        .exp-icon {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 36px;
+            height: 36px;
+            color: #00A8E8; /* Icono azul */
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+        .exp-company {
+            font-size: 1.1rem;
+            color: #FFFFFF;
+            font-weight: bold;
+        }
+        .exp-title {
+            font-size: 1.25rem;
+            color: #00A8E8; /* Título del cargo en azul */
+            font-weight: 500;
+        }
+        .exp-date-place {
+            color: #A0B3C1; /* Gris secundario para fecha y lugar */
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+        .exp-details {
+            color: #D3D9DE; /* Gris un poco más claro para el detalle */
+            font-size: 0.95rem;
+        }
     </style>
 </head>
 <body>
 
-    <header class="hero text-center">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <h1>Lorena Jiménez Meneses</h1>
-            <p class="lead">Ingeniera Comercial | Analista de Sistemas | Desarrolladora Full Stack Python</p>
-            <div class="mt-3">
-                <span class="me-3"><i class="bi bi-envelope"></i> lorenajimenezme@hotmail.com</span>
-                <span><i class="bi bi-linkedin"></i> linkedin.com/in/lorenajimenezmeneses</span>
+            <a class="navbar-brand" href="#"><i class="bi bi-code-square"></i> Lorena Jiménez M.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-3">
+                    <li class="nav-item"><a class="nav-link" href="#estudios">Educación</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#experiencia">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Recursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+                <a href="#" class="btn btn-cv btn-sm">Descargar CV</a>
             </div>
+        </div>
+    </nav>
+
+    <header class="hero text-center" id="experiencia">
+        <div class="container">
+            <h1>Experiencia <span>Laboral</span></h1>
+            <p class="hero-desc mt-4">
+                Acá tienes un resumen de toda mi experiencia profesional donde he integrado competencias de Ingeniería Comercial con Análisis de Sistemas y Desarrollo Web.
+            </p>
         </div>
     </header>
 
-    <main class="container my-5">
-        <h2 class="section-title text-center">Proyectos y Portafolio</h2>
-        <div id="projectCarousel" class="carousel slide shadow-lg mb-5" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://via.placeholder.com/1200x400/2c3e50/ffffff?text=Proyecto+Alke+Wallet+Django" class="d-block w-100" alt="Alke Wallet">
-                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded">
-                        <h5>Alke Wallet</h5>
-                        <p>Desarrollo Backend integral utilizando Python y el framework Django.</p>
-                    </div>
+    <main class="container exp-section">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+
+                <div class="exp-timeline-item">
+                    <div class="exp-icon"><i class="bi bi-headset"></i></div>
+                    <div class="exp-title">Ejecutiva de Atención Especializado</div>
+                    <div class="exp-date-place">02/2026 - 03/2026 | UPCOM DTS</div>
+                    <p class="exp-details">Gestión de casos críticos bajo la normativa técnica del Mineduc y plataformas CRM.</p>
                 </div>
-                <div class="carousel-item">
-                    <img src="https://via.placeholder.com/1200x400/34495e/ffffff?text=Sistemas+de+Gestion+de+Datos" class="d-block w-100" alt="Sistemas">
-                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded">
-                        <h5>Análisis y Optimización</h5>
-                        <p>Diseño de soluciones técnicas para procesos masivos y auditorías.</p>
-                    </div>
+
+                <div class="exp-timeline-item">
+                    <div class="exp-icon"><i class="bi bi-buildings"></i></div>
+                    <div class="exp-title">Ejecutiva Clientes Corporativos</div>
+                    <div class="exp-date-place">12/2016 - 03/2025 | ENTEL S.A.</div>
+                    <p class="exp-details">Administración de carteras corporativas superiores a $2.300 millones anuales con 124% de cumplimiento NPS.</p>
                 </div>
+
+                <div class="exp-timeline-item">
+                    <div class="exp-icon"><i class="bi bi-cpu"></i></div>
+                    <div class="exp-title">Analista de Sistemas / Coordinadora</div>
+                    <div class="exp-date-place">2000 - 2015 | ADT</div>
+                    <p class="exp-details">Diseño de programas para reajuste tarifario masivo y elaboración de manuales SOX.</p>
+                </div>
+
+                <div class="exp-timeline-item" id="estudios">
+                    <div class="exp-icon"><i class="bi bi-mortarboard"></i></div>
+                    <div class="exp-title">Ingeniera Comercial & Analista de Sistemas</div>
+                    <div class="exp-date-place">FORMACIÓN ACADÉMICA</div>
+                    <p class="exp-details">Titulada por Univ. de Las Américas y Univ. UCINF. Especializándome en Full Stack Python.</p>
+                </div>
+
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
         </div>
+    </main>
 
-        <section class="mb-5">
-            <h2 class="section-title">Perfil Profesional</h2>
-            <p class="text-secondary" style="font-size: 1.1rem; line-height: 1.8;">
-                Profesional con sólida trayectoria en atención a clientes corporativos, análisis de sistemas y coordinación administrativa. Experta en la gestión integral de carteras de alta facturación y diseño de sistemas bajo normativas legales. Actualmente especializándome en Desarrollo Full Stack Python para integrar visión estratégica con soluciones tecnológicas eficientes.
-            </p>
-        </section>
-
-        <section class="mb-5">
-            <h2 class="section-title">Formación Académica</h2>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card card-custom shadow-sm p-4">
-                        <h5>Ingeniería Comercial</h5>
-                        <p class="text-muted">Titulada | Universidad de Las Américas</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card card-custom shadow-sm p-4">
-                        <h5>Análisis de Sistemas</h5>
-                        <p class="text-muted">Titulada | Universidad UCINF</p>
-                    </div>
-                </div>
-                <div class="col-md-12 col-lg-4">
-                    <div class="card card-custom shadow-sm p-4" style="border-top-color: #349
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
